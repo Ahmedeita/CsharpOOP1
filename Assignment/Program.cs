@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data.SqlTypes;
+using System.Globalization;
+
 
 namespace Assignment
 {
@@ -11,22 +14,54 @@ namespace Assignment
              * 1.Create an enum called "WeekDays" with the days of the week (Monday to Sunday) as its members.
              * Then, write a C# program that prints out all the days of the week using this enum */
 
-            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
-            {
-                Console.WriteLine(day);
-            }
+            //foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
+            //{
+            //    Console.WriteLine(day);
+            //}
 
-            //**********************************************************
-            //                    Another Solution
-            //**********************************************************
+            ////**********************************************************
+            ////                    Another Solution
+            ////**********************************************************
 
-            for (int  i = 0;  i < 7;  i++)              
-                Console.WriteLine((WeekDays)i);
+            //for (int  i = 0;  i < 7;  i++)              
+            //    Console.WriteLine((WeekDays)i);
 
 
             #endregion
 
+            #region Q2
+            /*2.Create an enum called "Season" with the four seasons (Spring, Summer, Autumn, Winter) as its members.
+             * Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)*/
+
             
+
+            //bool Flag = false;
+            //Season SeasonName;
+            //do
+            //{
+            //    Console.Write("Enter Season Name : ");
+            //    Flag = Enum.TryParse(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Console.ReadLine()), out SeasonName);
+                
+
+            //}
+            //while (!Flag);
+
+            //switch (SeasonName)
+            //{
+            //    case Season.Spring:
+            //        Console.WriteLine("march to may");
+            //        break;
+            //    case Season.Summer:
+            //        Console.WriteLine("june to august"); break;
+            //    case Season.Autumn:
+            //        Console.WriteLine("September to November"); break;
+            //    case Season.Winter:
+            //        Console.WriteLine("December to February"); break;
+            //    default:
+            //        Console.WriteLine("Invalid input !!!"); break;
+            //}
+
+            #endregion
         }
     }
 }
