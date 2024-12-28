@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlTypes;
+using System.Drawing;
 using System.Globalization;
 
 
@@ -96,6 +97,28 @@ namespace Assignment
             #region Q4
             /*4.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members.
              * Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.*/
+            //bool Flag;
+            //Colors color;
+            //do
+            //{
+            //    Console.Write("Enter the Color Name to Check if it's a Primary Color or Not : ");
+            //    String InputColor = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Console.ReadLine()!.ToLower()); // I used ToLower Because if You Entered All Chars UpperCase ToTitleCase not working
+            //    Flag = Enum.TryParse(InputColor, out color);
+
+            //    if (!Flag)
+            //    { Console.WriteLine($"{InputColor} is not a Primary Color, please Enter another one  ...");
+            //        continue;   
+            //}
+            //    else
+            //        break;
+                
+            //}
+            //while (true);
+            
+            //    Console.WriteLine($"{color} is a primary color");
+
+
+
 
             #endregion
         }
