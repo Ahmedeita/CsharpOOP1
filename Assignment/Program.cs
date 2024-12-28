@@ -73,14 +73,14 @@ namespace Assignment
 
             //do
             //{
-            //    Console.WriteLine("Enter the Permission that You want To Add or Remove");
+            //    Console.Write("Enter the Permission that You want To Add or Remove : ");
             //    Flag = Enum.TryParse(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Console.ReadLine()), out permission);
             //}
             //while (!Flag);
 
             //if ((OldPermissions & permission) == permission)
             //{
-            //    OldPermissions ^=  permission;
+            //    OldPermissions |=  permission;  
             //    Console.WriteLine($"You Now Removed  {permission} Permission because it's already existed before ");
             //}
 
