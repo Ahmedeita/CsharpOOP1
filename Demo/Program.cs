@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using Common;
 
 namespace Demo
 {
@@ -97,6 +98,14 @@ namespace Demo
             //}
             //Console.WriteLine("After Try Catch");
             #endregion
+
+            #region Access Modifier
+           // TypeA typea = new TypeA();
+            //typea.x = 10;
+            //typea.y = 10;
+            //typea.z = 10;
+            #endregion
+
 
         }
     }
