@@ -33,7 +33,7 @@ namespace Assignment
             /*2.Create an enum called "Season" with the four seasons (Spring, Summer, Autumn, Winter) as its members.
              * Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)*/
 
-            
+
 
             //bool Flag = false;
             //Season SeasonName;
@@ -41,7 +41,7 @@ namespace Assignment
             //{
             //    Console.Write("Enter Season Name : ");
             //    Flag = Enum.TryParse(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Console.ReadLine()), out SeasonName);
-                
+
 
             //}
             //while (!Flag);
@@ -60,6 +60,42 @@ namespace Assignment
             //    default:
             //        Console.WriteLine("Invalid input !!!"); break;
             //}
+
+            #endregion
+
+            #region Q3
+            /*3.Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum.
+            ⮚Create Variable from previous Enum to Add and Remove Permission from variable, check if specific Permission is existed inside variable*/
+
+            //Permissions permission;
+            //Permissions OldPermissions = (Permissions)7;
+            //bool Flag = false;
+
+            //do
+            //{
+            //    Console.WriteLine("Enter the Permission that You want To Add or Remove");
+            //    Flag = Enum.TryParse(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Console.ReadLine()), out permission);
+            //}
+            //while (!Flag);
+
+            //if ((OldPermissions & permission) == permission)
+            //{
+            //    OldPermissions ^=  permission;
+            //    Console.WriteLine($"You Now Removed  {permission} Permission because it's already existed before ");
+            //}
+
+            //else
+            //{
+            //    OldPermissions ^= permission;
+            //    Console.WriteLine($"You added {permission} Permission");
+            //}
+
+
+            #endregion
+
+            #region Q4
+            /*4.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members.
+             * Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.*/
 
             #endregion
         }
