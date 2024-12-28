@@ -165,15 +165,59 @@ namespace Demo
             #endregion
             #endregion
 
+            #region Permissions
+            //Employee employee = new Employee();
 
+            //employee.Name = "Ali";
+            //employee.Age = 20;
+
+            //employee.Permissions = (Permissions)3;
+
+            //Console.WriteLine(employee.Permissions); // Delete, Execute
+
+            //// XOR
+            //employee.Permissions = employee.Permissions ^ Permissions.Read;
+
+            //Console.WriteLine(employee.Permissions); // Delete, Execute, Read
+
+            //employee.Permissions = employee.Permissions ^ Permissions.Read;
+
+            //Console.WriteLine(employee.Permissions); // Delete, Execute
+ 
+            //// &
+            //if ((employee.Permissions & Permissions.Read) == Permissions.Read)
+            //{
+            //    Console.WriteLine("Read is exist");
+            //}
+            //else
+            //{
+            //    employee.Permissions = employee.Permissions ^ Permissions.Read;
+            //}
+            //Console.WriteLine(employee.Permissions);
+
+
+            //// | or
+            
+            //    employee.Permissions |= Permissions.Read;
+            
+            //Console.WriteLine(employee.Permissions);
+            #endregion
+
+
+        }
+        [Flags]
+        public enum Permissions : byte
+        {
+            Delete = 1  , Execute = 2, Read = 4 , Write = 8
         }
         public class Employee
         {
-            string Name;
-            int Age;
-            decimal Salary;
-            Gender Gender; // Male - Female // 0 - 1  
-            Roles roles;
+            public string Name;
+            public int Age;
+            public decimal Salary;
+            public Gender Gender; // Male - Female // 0 - 1  
+            public Roles roles;
+            public Permissions Permissions;
         }
     }
 }
