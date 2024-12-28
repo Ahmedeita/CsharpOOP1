@@ -111,14 +111,36 @@ namespace Assignment
             //}
             //    else
             //        break;
-                
+
             //}
             //while (true);
-            
+
             //    Console.WriteLine($"{color} is a primary color");
 
 
 
+
+            #endregion
+
+            #region Q5 Struct
+            /*5.	Create a struct called "Point" to represent a 2D point with properties "X" and "Y". 
+             * Write a C# program that takes two points as input from the user and calculates the distance between them.*/
+            //Point P01 = new Point();
+            //Point P02 = new Point();
+            
+            //    Console.Write($"Enter the First Point [ X , Y ] \nx1 :  ");
+            //    P01.x = int.Parse(Console.ReadLine());
+            //    Console.Write($"y1 :  {P01.x} , ");
+            //    P01.y = int.Parse(Console.ReadLine());
+            //    Console.Write("x2 :  ");
+            //    P02.x = int.Parse(Console.ReadLine());
+            //    Console.Write($"y2 :  {P02.x} , ");
+            //    P02.y = int.Parse(Console.ReadLine());
+
+            //    Console.WriteLine($"Distance between [{P02.x},{P02.y}] and [{P01.x},{P01.y}] = {Point.Distance(P01,P02)} ");
+                
+
+           
 
             #endregion
         }
