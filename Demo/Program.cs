@@ -183,7 +183,7 @@ namespace Demo
             //employee.Permissions = employee.Permissions ^ Permissions.Read;
 
             //Console.WriteLine(employee.Permissions); // Delete, Execute
- 
+
             //// &
             //if ((employee.Permissions & Permissions.Read) == Permissions.Read)
             //{
@@ -197,10 +197,33 @@ namespace Demo
 
 
             //// | or
-            
+
             //    employee.Permissions |= Permissions.Read;
-            
+
             //Console.WriteLine(employee.Permissions);
+            #endregion
+
+            #region Struct
+            //Point P01;
+            ////Console.WriteLine(P01.X); //invalid
+            ////P01.X = 10;
+            ////P01.Y = 20;
+
+            ////Console.WriteLine(P01.X);
+            ////Console.WriteLine(P01.Y);
+
+            //P01 = new Point(2);
+
+            ////Console.WriteLine(P01.X);
+            ////Console.WriteLine(P01.Y);
+
+            //Console.WriteLine(P01); //AlexGroupDemoSession0100P.Point
+            //Console.WriteLine(P01.ToString()); //AlexGroupDemoSession0100P.Point
+
+            //int x = 10;
+            //Console.WriteLine(x);
+            //Console.WriteLine(x.ToString());
+
             #endregion
 
 
