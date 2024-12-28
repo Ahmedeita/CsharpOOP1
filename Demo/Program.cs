@@ -3,6 +3,23 @@ using Common;
 
 namespace Demo
 {
+    public enum Gender : int
+    {
+        Male , Female
+    }
+    public enum Days
+    {
+        Saturday  , Sunday , Monday , Tuesday , Wednesday , Friday
+        
+    }
+    public enum Grades
+    {
+        A,B,C,D,E,F
+    }
+    public enum Roles
+    {
+        Admin = 10 , Viewer = 20 , Editor = 30
+    }
     internal class Program
     {
         public static void DoSomeCode()
@@ -100,13 +117,63 @@ namespace Demo
             #endregion
 
             #region Access Modifier
-           // TypeA typea = new TypeA();
+            // TypeA typea = new TypeA();
             //typea.x = 10;
             //typea.y = 10;
             //typea.z = 10;
             #endregion
 
+            #region Enum
+            #region EX01
+            //string day = "asdada";
+            //Days day = Days.Friday;
+            //Grades grade = Grades.A;
 
+            //if (grade == Grades.A)
+            //    Console.WriteLine(":)");            
+            #endregion
+
+            #region EX02
+            //// Explicit Casting
+            //Grades grade = (Grades)2;
+            //Console.WriteLine(grade); // Output: C
+
+            //// Explicit Casting with invalid value
+            //Grades grade2 = (Grades)10;
+            //Console.WriteLine(grade2); // Output: 10 (Invalid value) 
+            #endregion
+
+            #region Ex03
+            //Grades grade = (Grades)Enum.Parse(typeof(Grades), Console.ReadLine()); 
+
+            //Enum.TryParse(typeof(Grades), Console.ReadLine(), out object Result);
+            //Grades grade = (Grades)Result;
+
+            //Console.WriteLine(Result);
+            #endregion
+
+            #region Ex04
+            //string gender = "male";
+
+            //Enum. TryParse(typeof(Gender), gender, out object Result);
+
+            //Console.WriteLine(Result);
+
+            //Enum. TryParse<Gender>(gender, true, out Gender Result);
+
+            //Console.WriteLine(Result);
+            #endregion
+            #endregion
+
+
+        }
+        public class Employee
+        {
+            string Name;
+            int Age;
+            decimal Salary;
+            Gender Gender; // Male - Female // 0 - 1  
+            Roles roles;
         }
     }
 }
